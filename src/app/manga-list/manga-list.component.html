@@ -1,0 +1,14 @@
+<h1>Liste Manga</h1>
+
+<div class="row row-cols-1 row-cols-md-3 g-4">
+    <div *ngFor="let manga of getMangas()" class="col">
+        <a href="/manga/{{manga.id}}">
+            <div class="card">
+                <img src="{{manga.image}}" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p>{{manga.title}}</p>
+                </div>
+            </div>
+        </a>
+    </div>
+</div>
